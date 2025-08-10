@@ -4,35 +4,30 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ugtext_processer"
-version = "0.1.0"
-authors = [
-    { name = "uyplayer", email = "uyplayer@outlook.com" },
-]
+version = "0.1.1"
+authors = [{ name = "uyplayer", email = "uyplayer@outlook.com" }]
 description = "text processing for uyghur script"
 readme = "README.md"
+license = { file = "LICENSE" }
 requires-python = ">=3.9"
 classifiers = [
     "Programming Language :: Python :: 3.9",
     "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
 ]
 dependencies = [
-    "pytest",
     "epitran",
     "sentencepiece",
-    "tokenizers"
-
+    "tokenizers",
 ]
 
 [project.optional-dependencies]
-test = [
-    "pytest",
-]
-
+test = ["pytest"]
 
 [tool.setuptools.packages.find]
-where = ["ugtext_processer"]
+where = ["."]
+include = ["ugtext_processer*"]
 
 [tool.pytest.ini_options]
-testpaths = [
-    "tests",
-]
+testpaths = ["tests"]
+
