@@ -4,10 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ugtext_processer"
-version = "0.1.6"
+version = "0.1.7"
 authors = [
     { name = "uyplayer", email = "uyplayer@outlook.com" },
 ]
+license = { file = "LICENSE" }
 description = "text processing for uyghur script"
 readme = "README.md"
 requires-python = ">=3.9"
@@ -27,6 +28,10 @@ dependencies = [
 
 ]
 
+[project.urls]
+Homepage = "https://github.com/uyplayer/ugtext_processer"
+Repository = "https://github.com/uyplayer/ugtext_processer"
+Issues = "https://github.com/uyplayer/ugtext_processer/issues"
 
 [project.optional-dependencies]
 test = [
