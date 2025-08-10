@@ -1,0 +1,12 @@
+
+
+
+
+
+build
+data
+.idea/
+.vscode/
+_pycache__
+dist
+
