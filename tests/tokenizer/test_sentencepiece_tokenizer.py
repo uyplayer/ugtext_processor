@@ -5,7 +5,7 @@ from unittest import TestCase
 
 import pytest
 
-from ugtext_processer.tokenizer.sentencepiece_tokenizer import SentencePieceTokenizer
+from ugtext_processor.tokenizer.sentencepiece_tokenizer import SentencePieceTokenizer
 from path_config import data_dir
 
 

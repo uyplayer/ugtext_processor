@@ -6,7 +6,7 @@ from tokenizers.models import BPE
 from tokenizers.pre_tokenizers import Whitespace
 from tokenizers.trainers import BpeTrainer
 
-from ugtext_processer.tokenizer.base_tokenizer import BaseTokenizer
+from ugtext_processor.tokenizer.base_tokenizer import BaseTokenizer
 
 
 

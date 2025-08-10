@@ -1,5 +1,5 @@
 import unittest
-from ugtext_processer.phonemizer import UgPhonemizer
+from ugtext_processor.phonemizer import UgPhonemizer
 
 class TestUgPhonemizer(unittest.TestCase):
 

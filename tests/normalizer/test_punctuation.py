@@ -1,5 +1,5 @@
 import unittest
-from ugtext_processer.normalizer.punctuation import UyghurPunctuationNormalizer
+from ugtext_processor.normalizer.punctuation import UyghurPunctuationNormalizer
 
 class TestUyghurPunctuationNormalizer(unittest.TestCase):
 

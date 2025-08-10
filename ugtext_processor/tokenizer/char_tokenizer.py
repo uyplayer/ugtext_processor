@@ -1,6 +1,6 @@
 import re
 
-from ugtext_processer.tokenizer.base_tokenizer import BaseTokenizer
+from ugtext_processor.tokenizer.base_tokenizer import BaseTokenizer
 
 
 class CharTokenizer(BaseTokenizer):

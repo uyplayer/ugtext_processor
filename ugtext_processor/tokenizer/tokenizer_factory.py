@@ -1,12 +1,12 @@
 from enum import Enum
 from typing import Type
 
-from ugtext_processer.tokenizer.base_tokenizer import BaseTokenizer
-from ugtext_processer.tokenizer.bpe_tokenizer import BpeTokenizer
-from ugtext_processer.tokenizer.char_tokenizer import CharTokenizer
-from ugtext_processer.tokenizer.sentencepiece_tokenizer import SentencePieceTokenizer
-from ugtext_processer.tokenizer.word_tokenizer import WordTokenizer
-from ugtext_processer.tokenizer.wordpiece_tokenizer import WordpieceTokenizer
+from ugtext_processor.tokenizer.base_tokenizer import BaseTokenizer
+from ugtext_processor.tokenizer.bpe_tokenizer import BpeTokenizer
+from ugtext_processor.tokenizer.char_tokenizer import CharTokenizer
+from ugtext_processor.tokenizer.sentencepiece_tokenizer import SentencePieceTokenizer
+from ugtext_processor.tokenizer.word_tokenizer import WordTokenizer
+from ugtext_processor.tokenizer.wordpiece_tokenizer import WordpieceTokenizer
 
 
 class TokenizerType(Enum):

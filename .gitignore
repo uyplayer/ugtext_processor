@@ -9,7 +9,7 @@ data
 .vscode/
 _pycache__
 dist
-ugtext_processer.egg-info
+ugtext_processor.egg-info
 __pycache__/
 *.py[cod]
 *.egg-info/

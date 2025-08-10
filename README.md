@@ -1,6 +1,6 @@
 # Text Processing for Uyghur Script
 
-`ugtext_processer` is a Python library for processing Uyghur text. It provides tools for normalization, phonemization, and tokenization.
+`ugtext_processor` is a Python library for processing Uyghur text. It provides tools for normalization, phonemization, and tokenization.
 
 ## Features
 
@@ -11,7 +11,7 @@
 ## Installation
  
 ```bash
-pip install ugtext-processer
+pip install ugtext-processor
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ pip install ugtext-processer
 The `normalizer` module provides a simple interface to clean and normalize Uyghur text.
 
 ```python
-from ugtext_processer.normalizer import normalize
+from ugtext_processor.normalizer import normalize
 
 text = "بۈگۈن 2024/07/26 سائەت 14:30، باھاسى ¥120.5، ئېغىرلىقى 2kg"
 normalized_text = normalize(text)
@@ -33,7 +33,7 @@ print(normalized_text)
 The `phonemizer` module can convert Uyghur text to IPA or ULY Latin script.
 
 ```python
-from ugtext_processer.phonemizer import UgPhonemizer
+from ugtext_processor.phonemizer import UgPhonemizer
 
 # To ULY Latin script
 phonemizer_uly = UgPhonemizer(mod=UgPhonemizer.Mod.ULY)
@@ -52,7 +52,7 @@ print(f"IPA: {''.join(ipa_phonemes)}")
 The `tokenizer` module provides a factory to create different types of tokenizers.
 
 ```python
-from ugtext_processer.tokenizer import TokenizerFactory, TokenizerType
+from ugtext_processor.tokenizer import TokenizerFactory, TokenizerType
 
 # Word Tokenizer
 word_tokenizer = TokenizerFactory.create_tokenizer(TokenizerType.WORD)
@@ -68,7 +68,7 @@ print(f"Character Tokens: {tokens}")
 
 ## Modules
 
-### `ugtext_processer.normalizer`
+### `ugtext_processor.normalizer`
 
 This module contains functions to normalize Uyghur text. The main function is `normalize`, which applies the following steps in order:
 
@@ -78,14 +78,14 @@ This module contains functions to normalize Uyghur text. The main function is `n
 4.  `UyghurDateNormalizer`: Normalizes dates and times into spoken form.
 5.  `UyghurNumberNormalizer`: Converts numbers into spoken form.
 
-### `ugtext_processer.phonemizer`
+### `ugtext_processor.phonemizer`
 
 This module provides the `UgPhonemizer` class for converting Uyghur text into phonetic representations.
 
 *   `UgPhonemizer(mod: Mod)`: The constructor takes a `mod` argument which can be `UgPhonemizer.Mod.IPA` or `UgPhonemizer.Mod.ULY`.
 *   `phonemizer(text: str)`: The main method that performs the conversion.
 
-### `ugtext_processer.tokenizer`
+### `ugtext_processor.tokenizer`
 
 This module provides a `TokenizerFactory` for creating various tokenizers.
 

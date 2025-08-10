@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from ugtext_processer.tokenizer.char_tokenizer import CharTokenizer
+from ugtext_processor.tokenizer.char_tokenizer import CharTokenizer
 
 
 class TestCharTokenizer(TestCase):

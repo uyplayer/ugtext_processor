@@ -5,7 +5,7 @@ from unittest import TestCase
 
 import pytest
 
-from ugtext_processer.tokenizer.bpe_tokenizer import BpeTokenizer
+from ugtext_processor.tokenizer.bpe_tokenizer import BpeTokenizer
 
 
 from path_config import data_dir

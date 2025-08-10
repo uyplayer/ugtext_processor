@@ -1,5 +1,5 @@
 import unittest
-from ugtext_processer.normalizer.abbreviation import UyghurAbbreviation
+from ugtext_processor.normalizer.abbreviation import UyghurAbbreviation
 
 class TestUyghurAbbreviation(unittest.TestCase):
 

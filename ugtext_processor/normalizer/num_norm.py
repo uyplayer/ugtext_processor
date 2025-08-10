@@ -1,6 +1,6 @@
 import re
 
-from ugtext_processer.normalizer.num2str import UyghurNumberConverter
+from ugtext_processor.normalizer.num2str import UyghurNumberConverter
 
 
 class UyghurNumberNormalizer(object):

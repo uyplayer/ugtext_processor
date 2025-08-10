@@ -2,7 +2,7 @@ import sys
 import os
 import unittest
 
-from ugtext_processer.normalizer.num_norm import UyghurNumberNormalizer
+from ugtext_processor.normalizer.num_norm import UyghurNumberNormalizer
 
 
 class TestUyghurNumNorm(unittest.TestCase):

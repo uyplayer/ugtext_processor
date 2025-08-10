@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from ugtext_processer.tokenizer.word_tokenizer import WordTokenizer
+from ugtext_processor.tokenizer.word_tokenizer import WordTokenizer
 
 
 class TestWordTokenizer(TestCase):

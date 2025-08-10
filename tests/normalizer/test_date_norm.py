@@ -1,5 +1,5 @@
 import unittest
-from ugtext_processer.normalizer.date_norm import UyghurDateNormalizer
+from ugtext_processor.normalizer.date_norm import UyghurDateNormalizer
 
 class TestUyghurDateNormalizer(unittest.TestCase):
 

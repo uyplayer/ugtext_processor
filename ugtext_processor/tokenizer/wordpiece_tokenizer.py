@@ -3,7 +3,7 @@
 import os
 from typing import Any
 from tokenizers import Tokenizer, models, trainers, pre_tokenizers
-from ugtext_processer.tokenizer.base_tokenizer import BaseTokenizer
+from ugtext_processor.tokenizer.base_tokenizer import BaseTokenizer
 
 
 class WordpieceTokenizer(BaseTokenizer):

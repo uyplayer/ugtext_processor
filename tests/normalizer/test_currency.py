@@ -1,5 +1,5 @@
 import unittest
-from ugtext_processer.normalizer.currency import UyghurCurrency
+from ugtext_processor.normalizer.currency import UyghurCurrency
 
 class TestUyghurCurrency(unittest.TestCase):
 

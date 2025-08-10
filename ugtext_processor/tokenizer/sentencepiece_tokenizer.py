@@ -1,6 +1,6 @@
 import os
 import sentencepiece as spm
-from ugtext_processer.tokenizer.base_tokenizer import BaseTokenizer
+from ugtext_processor.tokenizer.base_tokenizer import BaseTokenizer
 
 
 class SentencePieceTokenizer(BaseTokenizer):

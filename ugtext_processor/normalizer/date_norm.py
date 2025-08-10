@@ -1,7 +1,7 @@
 import re
 from typing import List
 import argparse
-from ugtext_processer.normalizer.num2str import UyghurNumberConverter
+from ugtext_processor.normalizer.num2str import UyghurNumberConverter
 
 
 class UyghurDateNormalizer(object):
