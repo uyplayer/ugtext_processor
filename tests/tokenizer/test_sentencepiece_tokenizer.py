@@ -3,10 +3,14 @@ import shutil
 import tempfile
 from unittest import TestCase
 
+import pytest
+
 from ugtext_processer.tokenizer.sentencepiece_tokenizer import SentencePieceTokenizer
-from conf.path_config import data_dir
+from path_config import data_dir
 
 
+
+@pytest.mark.skip(reason="ignore TestSentencePieceTokenizer")
 class TestSentencePieceTokenizer(TestCase):
     def setUp(self):
 

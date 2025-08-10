@@ -9,9 +9,9 @@
 *   **Tokenizer**: Supports various tokenization strategies, including word, character, BPE, WordPiece, and SentencePiece.
 
 ## Installation
-
+ 
 ```bash
-pip install -r requirements.txt
+pip install ugtext-processer==0.1.0
 ```
 
 ## Usage
