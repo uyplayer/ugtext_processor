@@ -27,8 +27,7 @@ dependencies = [
 
 ]
 
-[tool.setuptools]
-packages = ["find:"]
+
 [project.optional-dependencies]
 test = [
     "pytest",
