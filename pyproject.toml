@@ -23,6 +23,8 @@ dependencies = [
 
 ]
 
+[tool.setuptools]
+packages = ["find:"]
 [project.optional-dependencies]
 test = [
     "pytest",
@@ -30,7 +32,8 @@ test = [
 
 
 [tool.setuptools.packages.find]
-where = ["ugtext_processer"]
+where = ["."]
+include = ["ugtext_processer*"]
 
 [tool.pytest.ini_options]
 testpaths = [

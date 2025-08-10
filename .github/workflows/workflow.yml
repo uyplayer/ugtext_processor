@@ -13,13 +13,31 @@ jobs:
     permissions:
       contents: read
       id-token: write
+    concurrency:
+      group: pypi-${{ github.ref }}
+      cancel-in-progress: false
 
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.9"
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Check version matches tag
+        run: |
+          python - <<'PY'
+          import os, sys, tomllib
+          with open("pyproject.toml","rb") as f:
+              ver = tomllib.load(f)["project"]["version"]
+          tag = os.environ["GITHUB_REF_NAME"]
+          if not tag.startswith("v"):
+              sys.exit(f"Tag must start with v, got {tag}")
+          if ver != tag[1:]:
+              sys.exit(f"Version mismatch: pyproject={ver}, tag={tag[1:]}")
+          print("Version OK:", ver)
+          PY
 
       - name: Install build backend
         run: python -m pip install --upgrade build
@@ -27,8 +45,11 @@ jobs:
       - name: Build sdist and wheel
         run: python -m build
 
+      - name: Twine check
+        run: python -m pip install --upgrade twine && twine check dist/*
+
       - name: Publish to PyPI via OIDC
         uses: pypa/gh-action-pypi-publish@release/v1
-        # 想先发到 TestPyPI？改用下面两行并注释掉上面这一步：
-        # with:
-        #   repository-url: https://test.pypi.org/legacy/
+        with:
+          skip-existing: true
+          verbose: true
