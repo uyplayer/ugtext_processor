@@ -11,7 +11,7 @@
 ## Installation
  
 ```bash
-pip install ugtext-processer==0.1.0
+pip install ugtext-processer
 ```
 
 ## Usage
